@@ -12,6 +12,10 @@ h3 {
     font-size: 55px;
 }
 
+body {
+    background-color: #fffdda;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -23,7 +27,7 @@ h4 {
     font-weight: 600;
     font-size: 20px;
     line-height: 56px;
-    color: #FFFFFF;
+    color: #000000;
     text-align: center;
 }
 
@@ -40,8 +44,8 @@ h4 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background: #191919;
+    height: 110vh;
+    background: #ffffff;
 }
 
 .card1 {
@@ -60,7 +64,7 @@ h4 {
     justify-content: center;
     align-items: center;
     height: 100%;
-    background: linear-gradient(0deg, rgba(1, 26, 34, 0.89), rgba(1, 26, 34, 0.89)), url("./images/to-do.jpg");
+    background-color: #ffffff;
     background-size: cover;
     background-position: center;
     transition: all 1s ease-in-out;
@@ -68,8 +72,7 @@ h4 {
 
 .description {
     height: 0;
-    padding: 60px 50px 50px 50px;
-    background-color: #ffffff;
+    padding: 60px 60px 60px 60px;
     transition: all 1s ease-in-out;
 }
 
@@ -93,7 +96,6 @@ h4 {
 
 .tech-stack {
     padding-top: 15px;
-
 }
 
 .corner {
@@ -102,7 +104,7 @@ h4 {
     left: 0;
     width: 0;
     height: 0;
-    border-top: 100px solid #189AB4;
+    border-top: 100px solid #05011b;
     border-right: 100px solid transparent;
 }
 
@@ -133,4 +135,13 @@ h4 {
 .card1:hover .title,
 .card1:hover .description {
     height: 0%;
+}
+
+.card1:hover h4 {
+    transition: all 1s ease-in-out;
+    color: transparent;
+}
+
+.card1:hover {
+    background-color: #e6e4c8;
 }
