@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
+h1 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 45px;
+}
+
+h3 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 55px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h4 {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 56px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.projectsgrid {
+    display: flex;
+    justify-content: space-around;
+}
+
+.projectsgrid a {
+    text-decoration: none;
+}
+
+.container-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #191919;
+}
+
+.card1 {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    height: 300px;
+    width: 300px;
+    box-shadow: 0px 2px 21px rgba(0, 0, 0, 0.25);
+    border-radius: 26px 0 26px 0;
+    transition: all 1s ease-in-out;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(1, 26, 34, 0.89), rgba(1, 26, 34, 0.89)), url("./images/to-do.jpg");
+    background-size: cover;
+    background-position: center;
+    transition: all 1s ease-in-out;
+}
+
+.description {
+    height: 0;
+    padding: 60px 50px 50px 50px;
+    background-color: #ffffff;
+    transition: all 1s ease-in-out;
+}
+
+.description h5 {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #000000;
+}
+
+.description p {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #606060;
+}
+
+.tech-stack {
+    padding-top: 15px;
+
+}
+
+.corner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 100px solid #189AB4;
+    border-right: 100px solid transparent;
+}
+
+.rigth-top-corner {
+    left: auto;
+    right: 0;
+    transform: rotate(90deg);
+}
+
+.left-bottom-corner {
+    top: auto;
+    bottom: 0;
+    transform: rotate(-90deg);
+}
+
+.github-icon {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+}
+
+.link-icon {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+}
+
+.card1:hover .title,
+.card1:hover .description {
+    height: 0%;
+}
