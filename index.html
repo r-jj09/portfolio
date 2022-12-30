@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 
 <head>
     <meta charset="UTF-8">
@@ -14,13 +14,30 @@
 
 <body>
     <div class="intro">
-        <img class="profile" src=""> <!-- Majd az új profilkép material kerül ide -->
         <h1>Hajdú Réka</h1>
-        <p>
-            3. féléves programtervező informatikus hallgató vagyok a kecskeméti Neumann János Egyetemen. Főként a
-            webfejlesztés az ami az informatika területén érdekel. Fronten tudásomat szeretném gyarapítani és
-            fejleszteni.
-        </p>
+        <section class="job" id="job">
+            <span class="about">Programozó</span>
+        </section>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script>
+            var typed = new Typed(".about", {
+                strings: ["Programozó", "Frontend fejlesztő", "Informatikus", "Programozó"],
+                typeSpeed: 130,
+                backSpeed: 130,
+                smartBackspace: true,
+                loop: true,
+                showCursor: true,
+            });
+
+        </script>
+        <div class="introdetail">
+            <p>
+                3. féléves programtervező informatikus hallgató vagyok a kecskeméti Neumann János Egyetemen. Főként a
+                webfejlesztés az ami az informatika területén érdekel. Frontendes tudásomat szeretném gyarapítani és
+                fejleszteni.
+            </p>
+            <img class="profile" src="profile.jpg"> <!-- Majd az új profilkép material kerül ide -->
+        </div>
     </div>
     <div class="skills"> <!-- Talán ez a szekciót skippelem -->
         <!-- HTML -->
@@ -51,7 +68,7 @@
                             <h4>Social Média oldalak</h4>
                         </div>
                         <div class="description">
-                            <h5>Leírás:</h5>
+                            <h6>Leírás:</h6>
                             <p>Egy általam készített Linktree inspirálta weboldal ahol a közösségi oldalaim vannak egy
                                 helyre
                                 összegyüjtve.</p>
@@ -78,8 +95,10 @@
                             <h4>Mi kis könyvtárunk</h4>
                         </div>
                         <div class="description">
-                            <h5>Leírás:</h5>
-                            <p>Webprogramozás 1 órára készített csopormunánk. Egy saját könyvtárat hoztunk létre.</p>
+                            <h6>Leírás:</h6>
+                            <p>Webprogramozás 1 órára készített csopormunánk. Én elsősorban a css fájlokért és maga az
+                                oldalak design-jáért voltam
+                                felelős.</p>
                             <div class="tech-stack">
                                 <iconify-icon icon="vscode-icons:file-type-css" width="38" height="38"></iconify-icon>
                                 <iconify-icon icon="logos:php" width="38" height="38"></iconify-icon>
@@ -101,11 +120,10 @@
                             <h4>Hometown Landing Page</h4>
                         </div>
                         <div class="description">
-                            <h5>Leírás:</h5>
+                            <h6>Leírás:</h6>
                             <p>A 2022 novemberi SheCodes kihívásra készített főoldalam.</p>
                             <div class="tech-stack">
                                 <iconify-icon icon="vscode-icons:file-type-html" width="38" height="38"></iconify-icon>
-                                <iconify-icon icon="vscode-icons:file-type-css" width="38" height="38"></iconify-icon>
                             </div>
                         </div>
                         <div class="corner rigth-top-corner"></div>
@@ -118,17 +136,16 @@
                 </a>
             </div>
             <div class="project1">
-                <a href="https://github.com/r-jj09/My-Hometown" target="_blank">
+                <a href="https://github.com/r-jj09/My-Pet" target="_blank">
                     <div class="card1">
                         <div class="title">
-                            <h4>Hometown Landing Page</h4>
+                            <h4>My Pet Landing Page</h4>
                         </div>
                         <div class="description">
-                            <h5>Leírás:</h5>
-                            <p>A 2022 novemberi SheCodes kihívásra készített főoldalam.</p>
+                            <h6>Leírás:</h6>
+                            <p>A 2022 decemberi SheCodes kihívásra készített főoldalam.</p>
                             <div class="tech-stack">
                                 <iconify-icon icon="vscode-icons:file-type-html" width="38" height="38"></iconify-icon>
-                                <iconify-icon icon="vscode-icons:file-type-css" width="38" height="38"></iconify-icon>
                             </div>
                         </div>
                         <div class="corner rigth-top-corner"></div>
