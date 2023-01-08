@@ -4,8 +4,8 @@
 
 body {
     background: #d9a7c7;
-    background: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7);
-    background: linear-gradient(to right, #fffcdc, #d9a7c7);
+    background: -webkit-linear-gradient(to right, #bfdbd7, #7adacf);
+    background: linear-gradient(to right, #bfdbd7, #7adacf);
 
 
     margin: 20px;
@@ -49,6 +49,17 @@ span {
 }
 
 /*Skillek*/
+
+.skills h5 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    margin: 20px;
+}
+
+.skills a {
+    margin-left: 20px;
+}
 
 /*Contacts*/
 
@@ -98,9 +109,14 @@ h4 {
 }
 
 .description {
-    padding: 60px 60px 60px 60px;
     transition: all 1s ease-in-out;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+
 }
+
 
 .description h6 {
     font-family: 'Roboto', sans-serif;
@@ -116,10 +132,9 @@ h4 {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
     color: #000000;
     text-align: center;
-    margin: auto;
+    overflow-wrap: break-word;
 }
 
 .tech-stack {
@@ -196,7 +211,7 @@ h4 {
 }
 
 .card:hover {
-    background-color: #cea0bd;
+    background-color: #c4fff8;
 }
 
 .card:hover p {
