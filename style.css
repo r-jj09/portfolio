@@ -125,7 +125,7 @@ h1 {
 }
 
 .contacticons {
-    margin-left: 20px;
+    margin: 0 auto 0 auto;
 }
 
 /*Projektek 1(külső)*/
@@ -268,12 +268,13 @@ h4 {
 
 /*Gomb*/
 
-.cvbutton {
+.button {
     margin: 1rem;
     padding: 1rem;
 }
 
-.btn {
+.cvbutton {
+    text-decoration: none;
     display: inline;
     -webkit-border-radius: 8;
     -moz-border-radius: 8;
@@ -289,13 +290,13 @@ h4 {
 }
 
 @media (max-width: 800px) {
-    .btn {
+    .cvbutton {
         width: 50%;
         font-size: 15px;
     }
 }
 
-.btn:hover {
+.cvbutton:hover {
     background: #a4dceb;
     text-decoration: none;
 }
