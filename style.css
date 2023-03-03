@@ -7,6 +7,21 @@
     zoom: 1.0;
 }
 
+@media (max-width: 800px) {
+    .flex-container {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    .profiletext {
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+        font-size: 14px;
+    }
+}
+
 body {
     margin: 0;
     width: device-width;
@@ -70,19 +85,10 @@ h1 {
     align-items: center;
 }
 
-@media (max-width: 800px) {
-    .flex-container {
-        flex-direction: column;
-    }
-
-    .profiletext {
-        width: 100%;
-    }
-}
 
 .profiletext {
     padding: 2rem;
-    width: 25%;
+    width: 40%;
     text-align: right;
     line-height: 1.5;
 }
