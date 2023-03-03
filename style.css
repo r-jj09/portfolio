@@ -274,6 +274,7 @@ h4 {
 }
 
 .btn {
+    display: inline-block;
     -webkit-border-radius: 8;
     -moz-border-radius: 8;
     border-radius: 8px;
@@ -283,6 +284,8 @@ h4 {
     background: #96cede;
     padding: 10px 20px 10px 20px;
     text-decoration: none;
+    text-overflow: clip;
+    overflow-wrap: break-word;
 }
 
 .btn:hover {
