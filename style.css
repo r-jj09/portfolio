@@ -311,3 +311,9 @@ footer {
     font-weight: bolder;
     font-family: 'Roboto Condensed', sans-serif;
 }
+
+@media (max-width: 800px) {
+    footer {
+        font-size: 0.5rem;
+    }
+}
