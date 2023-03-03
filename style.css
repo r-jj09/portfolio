@@ -15,12 +15,11 @@
     }
 
     .profiletext {
-        display: block;
-        width: 100%;
-        padding: 0;
-        margin: 0;
         font-size: 14px;
+        line-height: 2;
         text-align: center;
+        margin: 0;
+        padding: 0;
     }
 }
 
@@ -265,4 +264,39 @@ h4 {
 .card:hover {
     background-color: #fef4e8;
     text-align: center;
+}
+
+/*Gomb*/
+
+.cvbutton {
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.btn {
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #000000;
+    font-size: 20px;
+    background: #96cede;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #a4dceb;
+    text-decoration: none;
+}
+
+/*Lábjegyzet*/
+
+footer {
+    background-color: #fef4e8;
+    margin: 0;
+    padding: 0.1rem;
+    text-align: center;
+    font-weight: bolder;
+    font-family: 'Roboto Condensed', sans-serif;
 }
