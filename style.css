@@ -15,10 +15,12 @@
     }
 
     .profiletext {
-        max-width: 100%;
+        display: block;
+        width: 100%;
         padding: 0;
         margin: 0;
         font-size: 14px;
+        text-align: center;
     }
 }
 
