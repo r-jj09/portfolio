@@ -274,7 +274,7 @@ h4 {
 }
 
 .btn {
-    display: inline-block;
+    display: inline;
     -webkit-border-radius: 8;
     -moz-border-radius: 8;
     border-radius: 8px;
@@ -286,6 +286,13 @@ h4 {
     text-decoration: none;
     text-overflow: clip;
     overflow-wrap: break-word;
+}
+
+@media (max-width: 800px) {
+    .btn {
+        width: 50%;
+        font-size: 15px;
+    }
 }
 
 .btn:hover {
