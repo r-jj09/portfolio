@@ -37,7 +37,7 @@ body {
 }
 
 .contacts {
-    background-color: white;
+    background-color: whites;
     padding: 50px;
     text-align: center;
 }
@@ -45,6 +45,17 @@ body {
 .projects {
     background: #96cede;
     padding: 20px;
+}
+
+.courses {
+    text-align: center;
+    background-color: white;
+    padding: 30px;
+}
+
+.experiance {
+    background-color: #fef4e8;
+    padding: 30px;
 }
 
 
@@ -266,6 +277,43 @@ h4 {
     text-align: center;
 }
 
+/*Kurzusok*/
+
+.experiance h5 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    text-align: center;
+}
+
+.coursebtn {
+    text-decoration: none;
+    display: inline;
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #000000;
+    font-size: 28px;
+    background: #96cede;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    text-overflow: clip;
+    overflow-wrap: break-word;
+}
+
+@media (max-width: 800px) {
+    .coursebtn {
+        width: 50%;
+        font-size: 15px;
+    }
+}
+
+.coursebtn:hover {
+    background: #a4dceb;
+    text-decoration: none;
+}
+
 /*Gomb*/
 
 .button {
@@ -304,7 +352,7 @@ h4 {
 /*Lábjegyzet*/
 
 footer {
-    background-color: #fef4e8;
+    background-color: #96cede;
     margin: 0;
     padding: 0.1rem;
     text-align: center;
