@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+span {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 45px;
+}
+
+.cim {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 6rem;
+    background-color: black;
+    color: #00bbf9;
+}
