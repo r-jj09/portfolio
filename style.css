@@ -140,7 +140,7 @@ h1 {
 }
 
 .contacticons {
-    margin: 20px 0 20px 0;
+    margin: 0 0 20px 0;
 }
 
 /*Projektek 1(külső)*/
@@ -335,6 +335,7 @@ h4 {
     font-size: 20px;
     text-decoration: none;
     color: white;
+    margin: 1rem;
 }
 
 @media (max-width: 800px) {
@@ -358,6 +359,10 @@ h4 {
 }
 
 .fa-download {
+    padding-right: 0.5rem;
+}
+
+.fa-graduation-cap {
     padding-right: 0.5rem;
 }
 
