@@ -1,91 +1,42 @@
 <!DOCTYPE html>
-<html lang="hu">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="google-site-verification" content="4m8CslE2PI558AwgoH7sDHPF68ooOF8G8RqJMkQwTG4" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <title>Projektek</title>
+    <link rel="shortcut icon" href="images/code.svg" type="image/x-icon">
+    <link rel="stylesheet" href="project.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-    <link rel="icon" href="images/favicon.svg">
-
-</head>
-<title>Portfólió</title>
 </head>
 
-<body>
-    <div class="intro">
-        <img class="intro-img" src="images/desk.png" alt="desk">
-        <h1>Hajdú Réka</h1>
-        <section class="job" id="job">
-            <span class="about"></span>
-        </section>
-        <script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
-        <script>
-            var typed = new Typed(".about", {
-                strings: ["Programozó", "Frontend fejlesztő"],
-                typeSpeed: 50,
-                backSpeed: 50,
-                loop: true,
-                showCursor: true,
-            });
-        </script>
-
-    </div>
-    <div class="flex-container">
-        <div class="profiletext">
-            <span>
-                4. féléves programtervező informatikus hallgató vagyok a kecskeméti Neumann János Egyetemen. Főként
-                a webfejlesztés területén képzelem el a jövőm, de a mobilfejlesztésbe is szívesen belekóstolnék
-                alaposabban.
-                <br><br>
-                Szabadidőmet olvasással, fotózással és videó vágással töltöm. Utóbbit csak hobbi szinten.
-            </span>
+<body class=".bg-transparent">
+    <script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
+    <script src="https://kit.fontawesome.com/c007afa4a8.js" crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-sm">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="index.html">Főoldal</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" aria-current="page" href="course.html">Kurzusok</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" href="projects.html">Projektek</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="profilepic">
-            <img class="profile-picture" src="images/profilepic.jpg"> <!-- Majd az új profilkép material kerül ide -->
-        </div>
-    </div>
-    <div class="skills">
-        <h5>Technológiák</h5>
-        <div class="icons">
-            <a><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg"
-                    width="50" height="50" alt="HTML5" /></a>
-            <a><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg"
-                    width="50" height="50" alt="CSS3" /></a>
-            <a><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mysql-colored.svg"
-                    width="50" height="50" alt="MySQL" /></a>
-            <a><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/bootstrap-colored.svg"
-                    width="50" height="50" alt="Bootstrap" /></a>
-            <!-- <a><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg"
-                    width="50" height="50" alt="JavaScript" /></a> -->
-            <!-- <a><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/typescript-colored.svg"
-                    width="50" height="50" alt="TypeScript" /></a> -->
-            <!-- <a><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/jquery-colored.svg"
-                    width="50" height="50" alt="jQuery" /></a> -->
-            <a><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/git-colored.svg"
-                    width="50" height="50" alt="Git" /></a>
-            <!-- <a><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nodejs-colored.svg"
-                    width="50" height="50" alt="NodeJS" /></a> -->
-            <!-- <a><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/express-colored.svg"
-                    width="50" height="50" alt="Express" /></a> -->
-            <!-- <a><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mongodb-colored.svg"
-                    width="50" height="50" alt="MongoDB" /></a> -->
-            <!-- <a><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg"
-                    width="50" height="50" alt="React" /></a> -->
-            <!-- <a><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/angularjs-colored.svg"
-                    width="50" height="50" alt="Angular" /></a> -->
-            <a><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/cplusplus-colored.svg"
-                    width="50" height="50" alt="C++" /></a>
-            <!-- <a><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/csharp-colored.svg"
-                    width="50" height="50" alt="C#" /></a> -->
-            <!-- <a><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/python-colored.svg"
-                    width="50" height="50" alt="Python" /></a> -->
-        </div>
-    </div>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </nav>
     <div class="projects">
         <h5 style="color: white;">Projektek</h5>
         <div class="projectsgrid">
@@ -159,6 +110,29 @@
                     </div>
                 </a>
             </div>
+            <div class="project">
+                <a href="" onclick="alert('Coming Soon')">
+                    <div class="kard">
+                        <div class="deskr">
+                            <h6 class="title">Dungeons and Dragons Karakter Genrátor</h6>
+                            <p class="deskription">Egy egyszerű JavaSript Dnd karakter generátor amit szabaditőmben
+                                raktam össze.</p>
+                            <div class="tech-stack">
+                                <iconify-icon icon="vscode-icons:file-type-html" width="38" height="38"></iconify-icon>
+                                <iconify-icon icon="vscode-icons:file-type-css" width="38" height="38"></iconify-icon>
+                                <iconify-icon icon="vscode-icons:file-type-js-official" width="38"
+                                    height="38"></iconify-icon>
+                            </div>
+                        </div>
+                        <div class="corner rigth-top-corner"></div>
+                        <iconify-icon class="github-icon" icon="akar-icons:github-fill" style="color: white;" width="38"
+                            height="38"></iconify-icon>
+                        <div class="corner left-bottom-corner"></div>
+                        <iconify-icon class="link-icon" icon="akar-icons:link-out" style="color: white;" width="38"
+                            height="38"></iconify-icon>
+                    </div>
+                </a>
+            </div>
             <!-- <div class="project">
                 <a href="LINK!!!!" target="_blank">
                     <div class="kard">
@@ -183,52 +157,7 @@
             </div> -->
             </a>
         </div>
-        <div class="pages">
-            <div class="button">
-                <a class="projectbtn" href="projects.html">
-                    <div class="fa fa-code"></div>További Projektek
-                </a>
-            </div>
-        </div>
     </div>
-    <div class="pages" id="courses">
-        <div class="button">
-            <a class="coursebtn" href="course.html">
-                <div class="fa fa-graduation-cap"></div>Udemy kurzusok
-            </a>
-        </div>
-    </div>
-    <div class="experiance">
-        <h5>Tanulmányok és tapasztalat</h5>
-        <ul class="list-group-flush">
-            <li class="list-group-item">
-                <div class="fa fa-school"></div> 2016-2021 - Weöres Sándor Általános Iskola
-                és
-                Gimnázium
-            </li>
-            <li class="list-group-item">
-                <div class=" fa fa-school"></div> 2021-2024 - Neumann János Egyetem GAMF kar
-                programtervező
-                Informatikus
-                FOSZK
-            </li>
-            <li class="list-group-item"></li>
-        </ul>
-    </div>
-    <div class="contacts">
-        <div class="contacticons">
-            <a href="https://github.com/r-jj09" target="_blank" rel="noreferrer"><img src="images/github.svg" width="25"
-                    height="25" /></a>
-            <a href="https://www.linkedin.com/in/r%C3%A9ka-hajd%C3%BA-bb6b83254/" target="_blank" rel="noreferrer"><img
-                    src="images/linkedin.svg" width="25" height="25" /></a>
-            <a href="mailto:hajdu.reka.009@email.com" target="_blank" rel="noreferrer"><img
-                    src="images/envelope-at-fill.svg" width="25" height="25" /></a>
-        </div>
-    </div>
-    </div>
-    <footer>
-        <p>© 2023 Réka Hajdú.</p>
-    </footer>
     <script src=" https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
     <script src="https://kit.fontawesome.com/c007afa4a8.js" crossorigin="anonymous"></script>
     </div>

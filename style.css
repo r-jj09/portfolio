@@ -22,6 +22,12 @@
         margin: 0;
         padding: 0;
     }
+
+    .about {
+        font-family: 'Roboto', sans-serif;
+        font-size: 17px !important;
+    }
+
 }
 
 body {
@@ -50,12 +56,6 @@ body {
     padding: 20px;
 }
 
-.courses {
-    text-align: center;
-    background-color: white;
-    padding: 30px;
-}
-
 .experiance {
     background-color: #96cede;
     padding: 30px;
@@ -68,8 +68,7 @@ body {
 .intro-img {
     text-align: center;
     padding: 0px;
-    image-rendering: -webkit-optimize-contrast;
-    max-width: 100%;
+    max-width: 110%;
     height: auto;
 }
 
@@ -87,7 +86,7 @@ h1 {
 
 .job span {
     font-family: 'Roboto', sans-serif;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 /*Profile and bio*/
@@ -177,11 +176,11 @@ h1 {
     padding: 10px;
 }
 
-h4 {
+h6 {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
+    font-size: 20px !important;
     font-weight: 600;
-    font-size: 20px;
     line-height: 56px;
     color: #000000;
     text-align: center;
@@ -264,12 +263,19 @@ h4 {
     text-align: center;
 }
 
-.courses {
+.pages {
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
+}
+
+#courses {
+    text-align: center;
+    background-color: white;
+    padding: 30px;
 }
 
 .coursebtn {
@@ -288,8 +294,31 @@ h4 {
     overflow-wrap: break-word;
 }
 
+.projectbtn {
+    text-decoration: none;
+    display: inline;
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    background: #57c2e9;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    text-overflow: clip;
+    overflow-wrap: break-word;
+}
+
 @media (max-width: 800px) {
     .coursebtn {
+        width: 70%;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    .projectbtn {
         width: 70%;
         font-size: 20px;
     }
@@ -300,31 +329,8 @@ h4 {
     text-decoration: none;
 }
 
-.shecodesbtn {
-    text-decoration: none;
-    display: inline;
-    -webkit-border-radius: 8;
-    -moz-border-radius: 8;
-    border-radius: 8px;
-    font-family: 'Roboto Condensed', sans-serif;
-    color: white;
-    font-size: 28px;
-    background: #970747;
-    padding: 10px 20px 10px 20px;
-    text-decoration: none;
-    text-overflow: clip;
-    overflow-wrap: break-word;
-}
-
-@media (max-width: 800px) {
-    .shecodesbtn {
-        width: 70%;
-        font-size: 20px;
-    }
-}
-
-.shecodesbtn:hover {
-    background: #a73066;
+.projectbtn:hover {
+    background: #57c2e9a6;
     text-decoration: none;
 }
 
@@ -344,46 +350,12 @@ h4 {
     }
 }
 
-.cvbutton {
-    margin: 15px;
-    display: inline;
-    -webkit-border-radius: 8;
-    -moz-border-radius: 8;
-    border-radius: 8px;
-    background: #970747;
-    color: white;
-    padding: 10px 20px 10px 20px;
-    text-decoration: none;
-    text-overflow: clip;
-    overflow-wrap: break-word;
-}
-
-.fa-download {
-    padding-right: 0.5rem;
-}
-
-.fa-graduation-cap {
-    padding-right: 0.5rem;
-}
-
 .fa-graduation-cap {
     padding-right: 0.5rem;
 }
 
 .fa-code {
     padding-right: 0.5rem;
-}
-
-@media (max-width: 800px) {
-    .cvbutton {
-        width: 50%;
-        font-size: 15px;
-    }
-}
-
-.cvbutton:hover {
-    background: #a73066;
-    text-decoration: none;
 }
 
 /*Lábjegyzet*/
