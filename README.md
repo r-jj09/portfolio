@@ -1,5 +1,4 @@
 # Portfolió
 
-A saját portfóló oldalam első verzója. Kezdetleges, de a feladatra megteszi. Feltüntettem az elérhetőségeimet (github, codepen, Linkedin, email) és az önéletrajzomat. Minden technológiát amit ismerek és úgy érzem a jelenlegi tudásommal megállom a helyem a munkapiacon velük. Korábbi projekteket amiket csináltam az egyetem alatt és azon kívül a szabadidőmben. 
-
-Későbbiekben még frissítések várhatóak.
+Folyamatosan frissülő és bővülő portfolió oldalam demo verzója a hivatalos a hajdureka.hu címen található. 
+Igyekszem folyamatosan bőveti új projektekkel és új technológiákkal valamint a kinézetén is folyamatos újítások várhatóak.
