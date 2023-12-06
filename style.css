@@ -89,7 +89,7 @@ ul {
 .intro {
     position: relative;
     text-align: center;
-    background-color: #2c3d5a;
+    background-color: #96cede;
     padding: 77px;
 }
 
@@ -255,7 +255,7 @@ h6 {
     position: relative;
     overflow: hidden;
     text-align: center;
-    height: 300px;
+    height: 350px;
     width: 300px;
     box-shadow: 0px 2px 21px rgba(0, 0, 0, 0.25);
     transition: all 1s ease-in-out;
