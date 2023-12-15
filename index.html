@@ -7,9 +7,10 @@
     <meta name="google-site-verification" content="4m8CslE2PI558AwgoH7sDHPF68ooOF8G8RqJMkQwTG4" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="images/favicon.svg">
+    <link rel="icon" href="images\Portfolio.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
 </head>
 <title>Portfólió</title>
 </head>
@@ -21,26 +22,19 @@
         <section class="job" id="job">
             <span class="about"></span>
         </section>
-        <script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
-        <script>
-            var typed = new Typed(".about", {
-                strings: ["Programozó", "Frontend fejlesztő"],
-                typeSpeed: 50,
-                backSpeed: 50,
-                loop: true,
-                showCursor: true,
-            });
-        </script>
-
     </div>
     <div class="flex-container">
         <div class="profiletext">
             <span>
-                4. féléves programtervező informatikus hallgató vagyok a kecskeméti Neumann János Egyetemen. Főként
-                a webfejlesztés területén képzelem el a jövőm, de a mobilfejlesztésbe is szívesen belekóstolnék
-                alaposabban.
+                Pályakezdő frontend fejlesztő vagyok 2024 februárjában végeztem a kecskeméti Neumann János Egyetem
+                programtervező informatikus felsőoktatási szakképzésén. Gimnáziumi tanulmányaim alatt nem tanultam
+                programozást ezért az egyetem volt a megismerkedésem bármilyen jellegű programozással. A webfejlesztés
+                területe keltette fel leginkább az érdeklődésem. Szeretem a fejlesztés kreatívabb oldalát megragadni és
+                ezért döntöttem a frontend irány mellett.
                 <br><br>
-                Szabadidőmet olvasással, fotózással és videó vágással töltöm. Utóbbit csak hobbi szinten.
+                Online kurzusok segítségével fejlesztem magam és igyekszek minnél több új dolgot tanulni. Később a
+                mobilfejlesztés vagy a webdesign tudást is szeretnék szerezni. Szabadidőmben szeretek angol nyelven
+                könyveket olvasni és ezzel a szókincsem illetve a szövegértésem fejleszteni.
             </span>
         </div>
         <div class="profilepic">
@@ -62,8 +56,8 @@
                     width="50" height="50" alt="JavaScript" /></a>
             <!-- <a><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/typescript-colored.svg"
                     width="50" height="50" alt="TypeScript" /></a> -->
-            <!-- <a><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/jquery-colored.svg"
-                    width="50" height="50" alt="jQuery" /></a> -->
+            <a><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/jquery-colored.svg"
+                    width="50" height="50" alt="jQuery" /></a>
             <a><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/git-colored.svg"
                     width="50" height="50" alt="Git" /></a>
             <!-- <a><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nodejs-colored.svg"
@@ -134,7 +128,7 @@
                     </div>
                 </a>
             </div>
-            <div class="project">
+            <div hidden class="project">
                 <a href="https://github.com/R-L-GroupProjects/your-little-library" target="_blank">
                     <div class="kard">
                         <div class="deskr">
@@ -179,42 +173,13 @@
                     </div>
                 </a>
             </div>
-            <!-- <div class="project">
-                <a href="LINK!!!!" target="_blank">
-                    <div class="kard">
-                        <div class="deskr">
-                            <h6 class="title">Cím</h6>
-                            <p class="deskription">Leírás.</p>
-                            <div class="tech-stack">
-                                <iconify-icon icon="vscode-icons:file-type-html" width="38" height="38"></iconify-icon>
-                                <iconify-icon icon="vscode-icons:file-type-css" width="38" height="38"></iconify-icon>
-                                <iconify-icon icon="vscode-icons:file-type-js-official" width="38"
-                                    height="38"></iconify-icon>
-                            </div>
-                        </div>
-                        <div class="corner rigth-top-corner"></div>
-                        <iconify-icon class="github-icon" icon="akar-icons:github-fill" style="color: white;" width="38"
-                            height="38"></iconify-icon>
-                        <div class="corner left-bottom-corner"></div>
-                        <iconify-icon class="link-icon" icon="akar-icons:link-out" style="color: white;" width="38"
-                            height="38"></iconify-icon>
-                    </div>
-                </a>
-            </div> -->
             </a>
-        </div>
-        <div class="pages">
-            <div class="button">
-                <a class="projectbtn" href="projects.html">
-                    <div class="fa fa-code"></div>További Projektek
-                </a>
-            </div>
         </div>
     </div>
     <div class="pages" id="courses">
         <div class="button">
-            <a class="coursebtn" href="course.html">
-                <div class="fa fa-graduation-cap"></div>Udemy kurzusok
+            <a class="coursebtn" href="">
+                <div class="fa-solid fa-file-pdf"></div> Önéletrajzom
             </a>
         </div>
     </div>
@@ -227,7 +192,7 @@
                 Gimnázium
             </li>
             <li class="list-group-item">
-                <div class=" fa fa-school"></div> 2021-2024 - Neumann János Egyetem GAMF kar
+                <div class=" fa fa-school"></div> 2021 Szeptember-2024 Február - Neumann János Egyetem GAMF kar
                 programtervező
                 Informatikus
                 FOSZK
@@ -252,11 +217,13 @@
         </div>
         <p>© 2023 Réka Hajdú.</p>
     </footer>
-    <script src=" https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
-    <script src="https://kit.fontawesome.com/c007afa4a8.js" crossorigin="anonymous"></script>
     </div>
 </body>
 
+<script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
+<script src="main.js"></script>
+<script src=" https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
+<script src="https://kit.fontawesome.com/c007afa4a8.js" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
     integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
     crossorigin="anonymous"></script>
