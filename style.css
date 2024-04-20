@@ -31,6 +31,11 @@
 
 }
 
+::selection {
+    background-color: #970747;
+    color: white;
+}
+
 body {
     margin: 0;
     width: device-width;
@@ -51,7 +56,7 @@ body {
 }
 
 .projects {
-    background: #208cb4;
+    background-image: linear-gradient(to right, #0172AF, #74febd);
     padding: 20px;
 }
 
@@ -61,21 +66,111 @@ body {
     text-align: center;
 }
 
-/* Navbar */
+/* Nav */
 
-.navbar {
-    background: #970747;
+.lang-bar {
+    display: flex;
+    flex-direction: row;
 }
 
-.navbar i {
+.handle {
+    border: none;
+    align-content: center;
+    background-color: #970747;
+    padding: 5px;
+    height: 60px;
+    width: 60px;
+
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.lang-bar {
+    overflow: hidden !important;
+    position: absolute;
+    transition: right 0.3s ease;
+    right: -150px;
+    top: 280px;
+}
+
+.lang-body {
+    overflow: hidden !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #208db4b3;
+    height: 80px;
+    width: 150px;
+}
+
+.lang {
     color: white;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin: 5px;
 }
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #970747;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #970747;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
 
 /*Intro*/
 
@@ -87,6 +182,7 @@ ul {
 }
 
 .intro {
+    overflow: hidden;
     position: relative;
     text-align: center;
     background-color: #96cede;
@@ -158,7 +254,12 @@ h1 {
 }
 
 .contacticons a {
+    transition: 1s ease-in-out;
     margin: 10px;
+}
+
+.contacticons a:hover {
+    transform: scale(1.1);
 }
 
 /*Projektek 1(külső)*/
@@ -183,6 +284,10 @@ h1 {
 /*Projektek 2(belső)*/
 
 .project {
+    background-color: black;
+    border-radius: 30px;
+    padding: 5px;
+    transition: all 0.5s ease-in-out;
     margin: 1rem;
 }
 
@@ -222,8 +327,6 @@ h6 {
     left: 0;
     width: 0;
     height: 0;
-    border-top: 100px solid #05011b;
-    border-right: 100px solid transparent;
 }
 
 .rigth-top-corner {
@@ -251,15 +354,22 @@ h6 {
 }
 
 .kard {
+    border-radius: 25px;
     position: relative;
     overflow: hidden;
     text-align: center;
     height: 300px;
     width: 300px;
     box-shadow: 0px 2px 21px rgba(0, 0, 0, 0.25);
-    transition: all 0.5s ease-in-out;
-    background-color: white;
+    background-color: #e9ecef;
     color: black;
+}
+
+@media (max-width: 300px) {
+    .kard {
+        height: 200px;
+        width: 200px;
+    }
 }
 
 .deskr {
@@ -267,8 +377,8 @@ h6 {
 }
 
 
-.kard:hover {
-    box-shadow: 0px 0px 15px 12px rgba(151, 7, 71, 0.7);
+.project:hover {
+    box-shadow: 0px 0px 15px 12px rgba(151, 7, 72, 0.921);
 }
 
 
@@ -299,17 +409,27 @@ h6 {
 .coursebtn {
     text-decoration: none;
     display: inline;
-    -webkit-border-radius: 8;
-    -moz-border-radius: 8;
     border-radius: 8px;
     font-family: 'Roboto Condensed', sans-serif;
     color: white;
     font-size: 28px;
-    background: #970747;
+    background-color: #970747;
     padding: 10px 20px 10px 20px;
-    text-decoration: none;
-    text-overflow: clip;
-    overflow-wrap: break-word;
+
+    background-image: linear-gradient(-60deg, transparent 0%, transparent 40%, rgba(255, 255, 255, 0.44) 40%, rgba(255, 255, 255, 0.44) 60%, transparent 60%, transparent 100%);
+    background-size: 200% 100%;
+    background-repeat: no-repeat;
+
+    background-position-x: 150%;
+
+}
+
+.coursebtn:hover {
+    background-position-x: -150%;
+    transition: background-position-x 1000ms;
+
+    /* background: #a73066;
+    text-decoration: none; */
 }
 
 .projectbtn {
@@ -340,11 +460,6 @@ h6 {
         width: 70%;
         font-size: 20px;
     }
-}
-
-.coursebtn:hover {
-    background: #a73066;
-    text-decoration: none;
 }
 
 .projectbtn:hover {
