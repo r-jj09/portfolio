@@ -186,7 +186,7 @@ input:checked+.slider:before {
     position: relative;
     text-align: center;
     background-color: #96cede;
-    padding: 77px;
+    padding: 70px;
 }
 
 h1 {
@@ -523,4 +523,51 @@ footer p {
 .list-group-item {
     font-size: 16px;
     padding: 10px;
+}
+
+/*Carousel*/
+
+.skills {
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.skills::before,
+.skills::after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+}
+
+.skills::after {
+    right: 0;
+    top: 0;
+    transform: rotateY(180deg);
+}
+
+.skills::before {
+    left: 0;
+    top: 0;
+}
+
+.skills .icons {
+    display: flex;
+    animation: scroll 40s linear infinite;
+}
+
+.skills .icons a {
+    width: 100px;
+    flex-shrink: 0;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-100px * 15));
+    }
 }
