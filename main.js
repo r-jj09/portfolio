@@ -21,8 +21,8 @@ $(".lang-body").on("click", "#languageSwitcher", (event) => {
 		//ANGOL VERZIÓ
 		console.log("Checkbox is checked");
 		name.textContent = "Réka Hajdú";
-		description.textContent =
-			"I graduated in February of 2024 from John von Neumann University GAMF Faculty of Engineering and Computer Science.";
+		// description.textContent =
+		// 	"I graduated in February of 2024 from John von Neumann University GAMF Faculty of Engineering and Computer Science.";
 	} else {
 		//MAGYAR VERZÓ
 		console.log("Checkbox is not checked");
