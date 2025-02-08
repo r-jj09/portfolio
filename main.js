@@ -1,3 +1,5 @@
+// Typed.js for the about section
+
 var typed = new Typed(".about", {
 	strings: ["Programozó", "Frontend fejlesztő", "Informatikus"],
 	typeSpeed: 50,
@@ -5,6 +7,22 @@ var typed = new Typed(".about", {
 	loop: true,
 	showCursor: true,
 });
+
+// Copyright Date
+
+function getCurrentYear() {
+	const currentDate = new Date();
+	return currentDate.getFullYear();
+}
+
+var year = document.getElementById("copyrightYear");
+copyrightYear.textContent = "© " + getCurrentYear() + " Hajdú Réka";
+
+console.log(getCurrentYear());
+
+// Css randomizer
+
+// Language switcher
 
 $(".lang-bar").on("click", ".handle", (event) => {
 	var switcher = document.getElementsByClassName("lang-bar")[0];
